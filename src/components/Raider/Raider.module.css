@@ -1,0 +1,111 @@
+.raiderContainer{
+    background-color: #EDEEF2;
+    padding: 80px 0px;
+}
+
+.titleContainer{
+    padding: 40px 10px;
+}
+
+.titleContainer > div{
+    padding: 16px 0px;
+    background-color: #FF4400;
+    font-size: 30px;
+}
+
+.titleContainer div:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 440px;
+    font-family: Exo-SemiBold;
+    color: white;
+    text-transform: uppercase;
+    transform: skew(-16deg);
+    padding: 16px 28px;
+    position: relative;
+    left: -40px;
+    letter-spacing: 6px;
+}
+
+.titleContainer div:nth-child(2){
+    transform: skew(-16deg);
+    width: 10px;
+    position: relative;
+    left: -40px;
+}
+
+.titleContainer div:nth-child(3){
+    transform: skew(-16deg);
+    width: 7px;
+    position: relative;
+    left: -40px;
+}
+
+.raiderImagesContainer{
+    padding-top: 40px;
+}
+
+.raiderImagesContainer a >  div{
+    cursor: pointer;
+    padding: 20px 0px;
+}
+
+.raiderImageParent{
+    height: 260px;
+    width: 260px;
+}
+
+.nameContainer{
+    width: 100%;
+    text-align: center;
+}
+
+.position{
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #FC8827;
+}
+
+.firstName{
+    font-size: 35px;
+    text-transform: capitalize;
+    font-family: "Exo", sans-serif;
+}
+
+.secondName{
+    font-size: 35px;
+    text-transform: capitalize;
+    font-family: "Exo", sans-serif;
+    font-weight: 700;
+}
+
+.defenderTitle{
+    background-color: white;
+    padding: 40px 10px 40px 20px;
+}
+
+.defenderImagesContainer{
+    background-color: white;
+    padding-bottom: 40px;
+}
+
+.allrounderTitle{
+    padding: 40px 10px 40px 24px;
+}
+
+.tiltDiv{
+    box-shadow: unset;
+}
+
+@media screen and (max-width: 640px){
+    .raiderContainer{
+        background-color: #EDEEF2;
+        padding: 80px 0px;
+    }
+
+    .titleContainer > div{
+        font-size: 20px;
+    }
+    
+}

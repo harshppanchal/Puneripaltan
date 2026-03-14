@@ -1,0 +1,61 @@
+.copyright{
+    font-family: "Exo", sans-serif;
+    font-size: 18px;
+    color: white;
+}
+.footerContainer{
+    padding: 20px 40px;
+}
+.footerContainer > div{
+    padding: 0px 15px;
+}
+.SubFooter .pDiv{
+    width: fit-content;
+}
+.SubFooter .pDiv p{
+    font-size: 9px;
+    width: fit-content;
+    margin: 2px;
+    background-color: #ff7500;
+    text-transform: uppercase;
+    padding: 0px 8px;
+    border-radius: 2px;
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-weight: 600;
+}
+.SubFooter > .imageDiv{
+    width: 88px;
+    height: 32px !important;
+    background-image: url(./dlimage.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40px;
+}
+.socialContainer > a{
+    background-color: #444452;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.socialContainer > a:hover{
+    background-color: #ff7500;
+}
+.socialContainer >  a svg{
+    font-size: 22px;
+    transition: all 0.5s;
+}
+.socialContainer > a:hover svg{
+    color: white;
+}
+@media screen and (max-width: 640px){
+    .footerContainer{
+        padding: 20px 0px;
+    }
+}

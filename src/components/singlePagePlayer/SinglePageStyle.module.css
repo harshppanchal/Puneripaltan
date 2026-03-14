@@ -1,0 +1,422 @@
+.singlePageHeroContainer {
+    height: 460px;
+    background-image: url('../PlayersHero/playerHeroImage2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.heroImageContainer {
+    /* border: 2px solid white; */
+    height: 80%;
+    width: 80%;
+    overflow: hidden;
+    padding: 0px 40px;
+}
+
+.heroImageContainer>img {
+    height: 720px;
+}
+
+.heroImageContainer>div {
+    text-align: center;
+    font-size: 80px;
+    line-height: 1;
+    letter-spacing: 8px;
+    color: #EC7A1C;
+    font-family: Exo-Semibold;
+    text-transform: uppercase;
+    height: fit-content;
+    margin-top: 28px;
+}
+
+.playerDataContainer {
+    background-image: url('https://www.puneripaltan.com/dist/img/players-inside/player-desc-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px;
+}
+
+.firstSection {
+    width: 40%;
+}
+
+.firstSection img {
+    height: 520px;
+}
+
+.secondSection {
+    width: 60%;
+    /* background-color: lightblue; */
+    padding: 10px 40px;
+}
+
+.secondSection>div:nth-child(1) {
+    border-bottom: 1px solid;
+    /* background-color: lightcyan; */
+    height: 200px;
+}
+
+.secondSection>div:nth-child(1)>div {
+    /* border: 1px solid; */
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.title {
+    text-transform: uppercase;
+    font-family: Exo-SemiBold;
+    background-color: #FF4400;
+    color: white;
+    text-align: center;
+    transform: skew(164deg);
+    font-size: 22px;
+    width: 200px;
+    letter-spacing: 4px;
+    padding: 4px 0px;
+}
+
+.answer {
+    font-size: 20px;
+    font-family: Exo-SemiBold;
+    margin-top: 12px;
+}
+
+.secondSection>div:nth-child(2) {
+    /* background-color: red; */
+    height: 300px;
+    padding-top: 28px;
+}
+
+.secondSection>div:nth-child(2)>div {
+    /* background-color: bisque; */
+    margin-top: 28px;
+    width: 100%;
+}
+
+.secondSection>div:nth-child(2)>div div {
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-between;
+}
+
+.secondSection>div:nth-child(2)>div div>p {
+    font-family: "Exo", sans-serif;
+}
+
+.secondSection>div:nth-child(2)>div div>p:nth-child(1) {
+    color: #959595;
+}
+
+.secondSection>div:nth-child(2)>div div>p:nth-child(2) {
+    font-weight: 500;
+}
+
+.statisticsContainer {
+    background-color: #EDEEF2;
+}
+
+.statisticTitle {
+    font-family: LoveNature;
+    color: #EC7A1C;
+    font-size: 110px;
+    text-align: center;
+    letter-spacing: 4px;
+    background-color: white;
+}
+
+.titleContainer {
+    padding: 40px 10px;
+    width: 30%;
+}
+
+.titleContainer>div {
+    padding: 16px 0px;
+    height: 80px;
+    background-color: #FF4400;
+    font-size: 30px;
+}
+
+.titleContainer div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 440px;
+    font-family: Exo-SemiBold;
+    color: white;
+    text-transform: uppercase;
+    transform: skew(-16deg);
+    padding: 16px 28px;
+    position: relative;
+    left: -40px;
+    letter-spacing: 6px;
+}
+
+.titleContainer div:nth-child(2) {
+    transform: skew(-16deg);
+    width: 10px;
+    position: relative;
+    left: -40px;
+}
+
+.titleContainer div:nth-child(3) {
+    transform: skew(-16deg);
+    width: 7px;
+    position: relative;
+    left: -40px;
+}
+
+.statsContainer {
+    width: 70%;
+}
+
+.statsContainer>div {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 12px;
+}
+
+.statsContainer>div p:nth-child(1) {
+    font-size: 40px;
+    font-family: Exo-SemiBold;
+    background-color: white;
+    width: 160px;
+    height: 60px;
+    text-align: center;
+}
+
+.statsContainer>div p:nth-child(2) {
+    font-size: 18px;
+    font-family: "Exo", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.statisticsContainerSecond {
+    background-color: white;
+    padding: 60px 0px 20px;
+}
+
+.statisticsContainerSecond .statsContainer>div p:nth-child(1) {
+    background-color: #EDEEF2;
+}
+
+.statisticsContainerThird {
+    background-color: #EDEEF2;
+    padding: 60px 0px 20px;
+}
+
+.sliderContainer {
+    padding: 20px 80px;
+}
+
+.sliderTitle {
+    font-size: 110px;
+    font-family: LoveNature;
+    color: #FF7500;
+    text-align: center;
+    letter-spacing: 8px;
+}
+
+.sliderSubContainer {
+    height: 400px;
+    clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+    margin: -52px 0px 32px;
+    padding: 0px 52px;
+    background-color: black ;
+}
+
+.cardDiv {
+    height: 400px !important;
+    /* background-color: violet; */
+    width: 560px !important;
+    clip-path: polygon(5% 0%, 100% 0%, 92% 100%, 0% 100%);
+}
+
+.cardDiv>div:nth-child(1) {
+    width: 100%;
+    /* background-color: oldlace; */
+    height: 20%;
+}
+
+.cardDiv>div:nth-child(1) p {
+    background-color: #EC7A1C;
+    color: white;
+    font-size: 50px;
+    padding-left: 60px;
+    width: 140px;
+    clip-path: polygon(5% 0%, 100% 0%, 91% 100%, 0% 100%);
+    font-family: "Exo", sans-serif;
+}
+
+.cardDiv>div:nth-child(2) {
+    height: 80%;
+    /* background-color: gold; */
+    width: 100%;
+}
+
+.cardDiv>div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+}
+
+.cardDiv>div:nth-child(2)>div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    /* background-color: white; */
+    clip-path: polygon(5% 0%, 100% 0%, 91% 100%, 0% 100%);
+    padding-left: 20px;
+}
+.cardDiv>div:nth-child(2)>div:nth-child(1) p:nth-child(1){
+    font-size: 34px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: white !important;
+}
+.cardDiv>div:nth-child(2)>div:nth-child(1) p:nth-child(1) span:nth-child(1) {
+    font-family: "Exo", sans-serif;
+    display: block;
+}
+
+.cardDiv>div:nth-child(2)>div:nth-child(1) p:nth-child(1) span:nth-child(2) {
+    font-weight: bold;
+    font-family: Exo-SemiBold;
+}
+
+
+.cardDiv>div:nth-child(2)>div:nth-child(1) p:nth-child(2) {
+    color: #EC7A1C;
+    font-size: 20px;
+    font-family: "Exo", sans-serif;
+    margin-top: 8px;
+}
+
+.imageContainer{
+    /* background-color: red; */
+    overflow: hidden;
+}
+.sliderPlayerImage{
+    transform: translateY(120px);
+    height: 380px;
+    width: 100%;
+}
+.slick-prev {
+    left: 25px !important;
+}
+.slick-next {
+    right: 25px !important;
+}
+.slick-prev {
+    left: 50px !important;
+}
+@media screen and (max-width: 1024px) {
+    .titleContainer {
+        width: 100%;
+    }
+
+    .statsContainer {
+        width: 100%;
+    }
+
+    .firstSection {
+        width: 100%;
+    }
+
+    .secondSection {
+        width: 100%;
+    }
+
+    .secondSection>div:nth-child(2) {
+        /* background-color: red; */
+        height: 300px;
+        padding-top: 28px;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .sliderContainer {
+        padding: 20px 40px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .playerDataContainer {
+        padding: 20px 10px;
+    }
+
+    .singlePageHeroContainer {
+        height: 340px;
+    }
+
+    .heroImageContainer {
+        position: relative;
+        z-index: 1;
+    }
+
+    .heroImageContainer>div {
+        font-size: 20px;
+        line-height: 1;
+        letter-spacing: 8px;
+        color: #EC7A1C;
+        font-family: Exo-Semibold;
+        text-transform: uppercase;
+        /* background-color: gold; */
+        height: fit-content;
+        margin-top: 28px;
+        position: absolute;
+        z-index: -1;
+        top: 0px;
+    }
+
+    .heroImageContainer>img {
+        height: 400px;
+        /* background-color: rebeccapurple; */
+        position: absolute;
+        bottom: -200px;
+        margin-top: 0px;
+    }
+
+    .statisticTitle {
+        font-size: 40px;
+    }
+    .sliderTitle {
+        font-size: 30px;
+        font-family: LoveNature;
+        color: #FF7500;
+        text-align: center;
+        letter-spacing: 8px;
+    }
+    .sliderSubContainer {
+        height: 400px;
+        background-color: black;
+        /* clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%); */
+        margin: 2px 0px 32px;
+    }
+    .cardDiv {
+        height: 100%;
+        /* background-color: violet; */
+        width: 100% !important;
+        clip-path: polygon(5% 0%, 100% 0%, 92% 100%, 0% 100%);
+    }
+    
+}
+
+@media screen and (max-width: 640px) {
+    .titleContainer>div {
+        font-size: 20px;
+    }
+
+}

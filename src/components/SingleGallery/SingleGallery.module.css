@@ -1,0 +1,221 @@
+.galleryTvHero {
+    height: 700px;
+    background-image: url("./banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.galleryTvHero>div {
+    height: 100%;
+}
+
+.galleryTvHero>div:nth-child(1) {
+    width: 60%;
+    background-image: url("./banner-title.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90% 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.galleryTvHero>div:nth-child(1) p {
+    text-align: center;
+    color: white;
+    font-family: LoveNature;
+    font-size: 90px;
+    text-transform: uppercase;
+    letter-spacing: 16px;
+    line-height: 80px;
+}
+
+.galleryTvHero>div:nth-child(2) {
+    width: 37%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.galleryTvHero>div:nth-child(2) div {
+    height: 40%;
+    width: 70%;
+    background-image: url("./puneri-gallery-desk-banner-s11.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.galleryCardContainer {
+    padding: 40px 80px;
+}
+
+.galleryTitle {
+    font-size: 50px;
+    font-family: LoveNature;
+    text-align: center;
+    color: #FF4400;
+}
+
+.cardContainer>div {
+    height: 240px;
+    cursor: pointer;
+}
+
+.cardContainer>div img {
+    height: 100%;
+    width: 100%;
+}
+
+.otherGalleryContainer a>div {
+    position: relative;
+    z-index: 1;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.otherGalleryContainer a>div div {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.otherGalleryContainer a>div img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    transition: all 0.5s;
+}
+
+.otherGalleryContainer a>div:hover img {
+    transform: scale(1.2);
+}
+
+.otherGalleryContainer a>div p {
+    color: white;
+    font-family: "Exo", sans-serif;
+    font-size: 26px;
+    position: relative;
+    z-index: -1;
+}
+.modalContainer{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+.subModalDiv{
+    height: 90%;
+    width: 80%;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+.iframeContainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.iframeContainer img{
+    height: 100%;
+    /* width: 100%; */
+}
+.chevronButton{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    z-index: 1;
+}
+.leftButton{
+    left: 10%;
+}
+.rightButton{
+    right: 10%;
+}
+.modalContainer .subModalDiv .buttonContainer{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    right: 8px;
+    top: 8px;
+}
+
+.modalContainer button{
+    cursor: pointer;
+}
+.modalContainer button svg{
+    font-weight: bolder;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+.closeSvg{
+    font-size: 32px !important;
+}
+
+@media screen and (max-width:1024px) {
+    .galleryTvHero {
+        height: 500px;
+        background-image: url("./banner.jpg");
+        flex-flow: column wrap;
+    }
+
+    .galleryTvHero>div:nth-child(2) {
+        display: none;
+    }
+
+    .galleryCardContainer {
+        padding: 20px 40px;
+    }
+
+    .galleryTitle {
+        font-size: 50px;
+        font-family: LoveNature;
+        text-align: center;
+        color: #FF4400;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .galleryTvHero {
+        height: 420px;
+        background-image: url("https://www.puneripaltan.com/dist/img/gallery/puneri-gallery-mob-banner-s12.jpg");
+    }
+
+    .galleryTvHero>div:nth-child(1) {
+        display: none;
+    }
+
+    .galleryCardContainer {
+        padding: 20px 10px;
+    }
+    .subModalDiv{
+        height: 60%;
+        width: 80%;
+        background-color: white;
+        position: relative;
+        z-index: 1;
+    }
+}

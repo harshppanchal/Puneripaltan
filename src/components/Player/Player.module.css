@@ -1,0 +1,203 @@
+@import url('https://fonts.cdnfonts.com/css/love-nature-2');
+.playerContainer{
+    background-image: url("https://www.puneripaltan.com/dist/img/description-bg-new.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 120px 0px 320px;
+}
+.scrollParent{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.lineDiv{
+    background-color: white;
+    height: 140px;
+    width: 1.4px;
+}
+.scrollParent p{
+    color: white;
+    font-family: "Exo", sans-serif;
+    letter-spacing: 65px;
+    position: absolute;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: 60px;
+}
+.description{
+    padding: 0px 136px;
+}
+.description p{
+    text-align: justify;
+    color: #FF7500;
+    font-family: "Exo", sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 49px;
+}
+.playersImages{
+    padding: 100px 0px;
+}
+.players{
+    color: #FF7500;
+    font-size: 75px;
+    letter-spacing: 6px;
+    font-family: LoveNature;
+    text-transform: uppercase;
+    padding-left: 24px;
+    width: 30%;
+}
+
+.enterButton{
+    background-image: linear-gradient(to right, #df3100 0, #ff7500 100%);
+    border: 0;
+    padding: 8px 30px;
+    width: 280px;
+    border-radius: 0;
+    font-size: 20px;
+    color: white;
+    font-family: "Exo-SemiBold";
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+    letter-spacing: 3px;
+    transform: skew(-16deg);
+    display: block;
+    margin: auto;
+    transition: all 0.4s ease-in-out;
+}
+.enterButton:hover{
+    background-image: linear-gradient(to right, #df3100 0, #ff7500 25%, white 50%, #ff7500 75%, #df3100 100%);
+}
+.sliderContainer{
+    /* background-color: lightblue; */
+    padding: 20px 8px;
+    width: 60%;
+}
+.cardDiv{
+    height: 380px;
+    /* background-color: red; */
+}
+.imgContainer{
+    height: 70%;
+    /* background-color: blue; */
+}
+.imgContainer img{
+    height: 80%;
+    width: 80%;
+}
+.nameContainer > p:nth-child(1){
+    font-size: 40px;
+    color: white;
+    line-height: 32px;
+}
+.nameContainer > p:nth-child(1) span:nth-child(1){
+    font-family: "Exo", sans-serif;
+}
+.nameContainer > p:nth-child(1) span:nth-child(2){
+    font-family: Exo-SemiBold;
+}
+.nameContainer > p:nth-child(2){
+    color: #FF7500;
+    font-family: "Exo", sans-serif;
+    font-size: 20px;
+}
+.slick-prev, .slick-next {
+    top: 100% !important;
+}
+.slick-prev {
+    left: 120px !important;
+    top: 100% !important;
+}
+.slick-next {
+    right: 120px !important;
+    top: 100% !important;
+}
+.animatedbtn {
+    position: absolute;
+    right: 5%;
+    top: 85%;
+    transform: translateY(-50%);
+    z-index: 5;
+}
+
+.btn {
+    position: relative;
+    background: linear-gradient(90deg, #df3100 0, #ff7500 100%);
+    border: 0;
+    padding: 8px 30px;
+    width: 280px;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 3px;
+    font-family: 'Exo', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    transform: skew(-15deg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #df3100 0, #ff7500 25%, white 50%, #ff7500 75%, #df3100 100%);
+    background-size: 300% 100%;
+    background-position: 100% 0;
+    transition: background-position 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.btn:hover::after {
+    background-position: 0% 0;
+}
+@media screen and (max-width: 1023px) {
+    .players{
+        width: 100%;
+    }
+    .sliderContainer{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .playerContainer{
+        padding: 120px 0px 240px;
+    }
+    .scrollParent{
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .lineDiv{
+        height: 60px;
+    }
+    .scrollParent p{
+        margin-left: 20px;
+        letter-spacing: 28px;
+        font-size: 20px;
+    }
+    .players{
+        font-size: 40px;
+        text-align: center;
+    }
+    .description{
+        padding: 0px 60px;
+    }
+    .description p{
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+    }
+    .cardDiv{
+        height: 520px;
+        /* background-color: red; */
+    }
+    .sliderContainer{
+        width: 80%;
+    }
+}

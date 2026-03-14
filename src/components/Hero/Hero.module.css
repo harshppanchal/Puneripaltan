@@ -1,0 +1,25 @@
+.heroContainer{
+    background-image: url("./home-banner-new-design-s12.webp");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 633px;
+}
+
+@media screen and (max-width:1024px){
+    .heroContainer{
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .heroContainer{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:576px){
+    .heroContainer{
+        height: 240px;
+    }
+}

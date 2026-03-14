@@ -1,0 +1,90 @@
+.partnerContainer {
+    padding: 0px 48px;
+}
+
+.subscribeDiv {
+    width: 100%;
+    background-color: #FF7500;
+    height: 100px;
+    clip-path: polygon(2% 0%, 100% 0%, 98% 100%, 0% 100%);
+    position: relative;
+    top: -50px;
+    padding: 0px 60px;
+}
+.subscribeDiv p{
+    font-size: 28px;
+    font-family: LoveNature;
+    color: white;
+    text-align: end;
+    letter-spacing: 2px;
+}
+.subscribeDiv div div{
+    background-color: white;
+    width: 70%;
+    clip-path: polygon(2% 0%, 100% 0%, 98% 100%, 0% 100%);
+}
+.subscribeDiv div div input{
+    height: 40px;
+    width: 100%;
+    padding: 0px 16px;
+    font-family: "Exo", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+}
+.subscribeDiv div div input::placeholder{
+    opacity: 0.5;
+    letter-spacing: 2px;
+}
+
+.subscribeDiv div button{
+    background-image: linear-gradient(to right, red, orange);
+    font-family: Exo-SemiBold;
+    width: 60px;
+    height: 40px;
+    transform: skew(170deg);
+    font-size: 20px;
+    color: white;
+}
+.partnerTitle {
+    font-size: 110px;
+    font-family: LoveNature;
+    color: #FF7500;
+    letter-spacing: 4px;
+    text-align: center;
+}
+.sponsorContainer{
+    margin: 20px 0px;
+}
+.sponsorContainer > div{
+    padding: 20px 0px;
+    display: flex;
+    flex-wrap: row wrap;
+    gap: 12px;
+    justify-content: center;
+}
+.sponsorContainer > div div{
+    text-align: center;
+    font-family: "Exo", sans-serif;
+    font-size: 16px;
+    font-weight: light;
+    letter-spacing: 2px;
+}
+.sponsorContainer > div div a img{
+    height: 100px;
+}
+@media screen and (max-width: 768px){
+    .partnerContainer {
+        padding: 0px 0px;
+    }    
+    .subscribeDiv {
+        height: 200px;
+        padding: 0px 8px;
+    }
+    .partnerTitle{
+        font-size: 40px;
+    }
+    .sponsorContainer > div div a img{
+        height: 80px;
+    }
+}

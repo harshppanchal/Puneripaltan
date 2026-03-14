@@ -1,0 +1,64 @@
+.playersHeroContainer {
+    height: 640px;
+    width: 100%;
+    background-image: url("./playerHeroImage2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0px 40px;
+}
+
+.playersHeroContainer > div {
+    height: 400px;
+}
+
+.firstHero {
+    background-image: url('https://www.puneripaltan.com/dist/img/banner-title.png');
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.secondHero {
+    background-image: url("./players_page_banner_desktop_S12.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.playerText {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-size: 32px;
+    font-family: LoveNature;
+    font-size: 80px;
+    line-height: 88px;
+    font-weight: 400;
+    letter-spacing: 8px;
+}
+
+@media screen and (max-width: 1024px) {
+    .secondHero {
+        display: none;
+    }
+
+    .firstHero {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .playersHeroContainer {
+        padding: 0px 0px;
+        height: 620px;
+    }
+    .secondHero {
+        display: block;
+        height: 100% !important;
+        background-image: url("https://www.puneripaltan.com/dist/img/players/players-banner-mobile_S12.jpg");
+    }
+    .firstHero {
+        display: none;
+    }
+}

@@ -1,0 +1,290 @@
+.puneriTvHero {
+    height: 700px;
+    background-image: url("./banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.puneriTvHero>div {
+    height: 100%;
+}
+
+.puneriTvHero>div:nth-child(1) {
+    width: 60%;
+    background-image: url("./banner-title.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90% 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.puneriTvHero>div:nth-child(1) p {
+    text-align: center;
+    color: white;
+    font-family: LoveNature;
+    font-size: 90px;
+    text-transform: uppercase;
+    letter-spacing: 16px;
+    line-height: 80px;
+}
+
+.puneriTvHero>div:nth-child(2) {
+    width: 37%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.puneriTvHero>div:nth-child(2) div {
+    height: 40%;
+    width: 70%;
+    background-image: url("./puneri-tv-desk-banner-s12.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.videoContainer{
+    padding: 40px 80px;
+}
+
+.seasonDiv > p{
+    transform: skew(166deg);
+    padding: 12px 20px;
+    border: 1px solid;
+    font-family: Exo-SemiBold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.seasonDiv > p:nth-child(1){
+    background-color: #FF4400;
+}
+
+.seasonDiv > p:nth-child(2){
+    background-color: #A1A1B2;
+}
+
+.videoContainerDiv{
+    padding: 20px 0px;
+    margin-top: 20px;
+}
+
+.videoContainerDiv > div{
+    padding: 8px 0px;
+    cursor: pointer;
+}
+
+.imgContainer{
+    height: 400px;
+    background-color: black;
+    margin-bottom: 12px;
+}
+
+.imgContainer iframe{
+    height: 80%;
+    width: 100%;
+}
+
+.videoDetailsContainer{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 12px;
+    overflow: hidden;
+}
+
+.videoDetailsContainer > div{
+    position: relative;
+    left: -8px;
+    background-color: #FF4400;
+    transform: skew(166deg);
+    font-family: "Exo", sans-serif;
+    color: white;
+    font-size: 18px;
+}
+
+.videoDetailsContainer > div:nth-child(1){
+    padding: 0px 20px;
+    width: 440px;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+
+.videoDetailsContainer > div:nth-child(2){
+    width: 12px;    
+}
+
+.videoDetailsContainer > div:nth-child(3){
+    width: 4px;
+}
+
+.modalContainer{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.subModalDiv{
+    height: 90%;
+    width: 80%;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.iframeContainer{
+    height: 100%;
+    width: 100%;
+}
+
+.iframeContainer iframe{
+    height: 100%;
+    width: 100%;
+}
+
+.modalContainer .subModalDiv .buttonContainer{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: -1;
+    right: -20px;
+    top: 40px;
+}
+
+.modalContainer button{
+    cursor: pointer;
+}
+
+.modalContainer button svg{
+    font-weight: bolder;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.otherGalleryContainer{
+    overflow: hidden;
+    background-color: black;
+}
+
+.otherGalleryContainer a{
+    height: 280px;
+    width: 100%;
+}
+
+.otherGalleryContainer a > div{
+    height: 100%;
+    width: 100%;
+    background-position: 100% 30%;
+    background-repeat: no-repeat;
+    background-size: 100% 160%;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Exo", sans-serif;
+    font-size: 26px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.otherGalleryContainer a > div::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    left: 0;
+    right: 0;
+}
+
+.otherGalleryContainer a > div:hover{
+    transform: scale(1.2);
+    font-size: 26px;
+}
+
+.first{
+    background-image: url("./gallery-s12.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.second{
+    background-image: url("./Wallpapers-s12.png");
+    background-position: center;
+}
+
+.third{
+    background-image: url("./blogs-s12.png");
+    background-position: center;
+}
+
+@media screen and (max-width:1024px) {
+    .puneriTvHero {
+        height: 500px;
+        background-image: url("./banner.jpg");
+        flex-flow: column wrap;
+    }
+
+    .puneriTvHero>div:nth-child(2) {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .puneriTvHero {
+        height: 500px;
+        background-image: url("https://www.puneripaltan.com/dist/img/tv/puneri-tv-mob-banner-s12.jpg");
+    }
+
+    .puneriTvHero>div:nth-child(1) {
+        display: none;
+    }
+
+    .videoContainer{
+        padding: 40px 20px;
+    }
+
+    .otherGalleryContainer a{
+        height: 200px;
+        width: 100%;
+    }
+
+    .seasonDiv > p{
+        font-size: 14px;
+        padding: 4px 8px;
+    }
+
+    .subModalDiv{
+        height: 60%;
+        width: 80%;
+        background-color: white;
+        position: relative;
+        z-index: 1;
+    }
+
+}

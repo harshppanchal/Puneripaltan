@@ -1,0 +1,55 @@
+.paltanContainer {
+    height: 460px;
+}
+
+.paltanContainer div {
+    height: 100%;
+    padding:10px;
+    background-image: url("https://www.puneripaltan.com/dist/img/paltan-world-homepage_s12.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.paltanSecondContainer a>div {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paltanSecondContainer a>div p {
+    font-family: LoveNature;
+    font-size: 70px;
+    letter-spacing: 8px;
+}
+
+.paltanSecondContainer a:nth-child(1)>div {
+    background-image: url("https://www.puneripaltan.com/dist/img/world/tv-s12.png");
+}
+
+.paltanSecondContainer a:nth-child(2)>div {
+    background-image: url("https://www.puneripaltan.com/dist/img/world/gallery-s12.png");
+}
+
+.paltanSecondContainer a:nth-child(3)>div {
+    background-image: url("https://www.puneripaltan.com/dist/img/world/Wallpapers-s12.png");
+}
+
+@media screen and (max-width:768px) {
+    .paltanContainer {
+        height: 400px;
+    }
+
+    .paltanContainer div {
+        background-image: url("https://www.puneripaltan.com/dist/img/paltan-world-banner-mobile_s12.png");
+    }
+    .paltanSecondContainer a>div p {
+        font-size: 32px;
+    }
+
+}
